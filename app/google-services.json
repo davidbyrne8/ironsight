@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "894215317585",
+    "firebase_url": "https://ironsight-afcad.firebaseio.com",
+    "project_id": "ironsight-afcad",
+    "storage_bucket": "ironsight-afcad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:894215317585:android:0b23df29092e73b4",
+        "android_client_info": {
+          "package_name": "com.davebyrne.ironsight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "894215317585-jklv4q89babpromk0csk1070ffuda6kf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.davebyrne.ironsight",
+            "certificate_hash": "3df49dd8eb26162e4745d19d8d8a2e9e1ae0d8dd"
+          }
+        },
+        {
+          "client_id": "894215317585-ip304di227p55ob5qesr6gi1so050brl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDSjsmENMGU0RqNYmnmMIgq0dFy0mVm1g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "894215317585-ip304di227p55ob5qesr6gi1so050brl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
