@@ -11,10 +11,23 @@
     tools:context="com.davebyrne.ironsight.activity.SettingsActivity">
 
     <Button
-        android:text="Log out"
+        android:text="Log Out"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/button4" />
+        android:id="@+id/button4"
+        android:background="@color/orange"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="127dp"
+        android:layout_alignStart="@+id/button5"
+        android:layout_alignEnd="@+id/button5" />
+
+    <Button
+        android:text="Delete Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:id="@+id/button5"
+        android:background="@color/orange"
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

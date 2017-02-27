@@ -1,5 +1,7 @@
 package com.davebyrne.ironsight.activity;
 
+/*this class is the log in page. has logo, login email, password, forget password amd register options*/
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -21,8 +23,8 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
 
     private EditText inputEmail, inputPassword;
-    private FirebaseAuth auth;
-    private ProgressBar progressBar;
+    private FirebaseAuth auth; //instance of firebase auth login system
+    private ProgressBar progressBar; //not used atm
     private Button btnSignup, btnLogin, btnReset;
 
     @Override
@@ -33,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         if (auth.getCurrentUser() != null) {
-            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            startActivity(new Intent(LoginActivity.this, MainActivity.class)); //if current user is valid, go to MainActivity
             finish();
         }
 
@@ -53,21 +55,21 @@ public class LoginActivity extends AppCompatActivity {
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
 
-        btnSignup.setOnClickListener(new View.OnClickListener() {
+        btnSignup.setOnClickListener(new View.OnClickListener() { //register button
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, SignupActivity.class));
             }
         });
 
-        btnReset.setOnClickListener(new View.OnClickListener() {
+        btnReset.setOnClickListener(new View.OnClickListener() { //forgot password button
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
             }
         });
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
+        btnLogin.setOnClickListener(new View.OnClickListener() { //login button
             @Override
             public void onClick(View v) {
                 String email = inputEmail.getText().toString();

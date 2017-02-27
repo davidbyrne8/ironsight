@@ -5,12 +5,12 @@
     <color name="textColorPrimary">#FFFFFF</color>
     <color name="windowBackground">#101010</color>
     <color name="navigationBarColor">#545454</color>
-    <color name="colorAccent">#FF80AB</color>
+    <color name="colorAccent">#2e3237</color>
 
     <color name="year">#999999</color>
     <color name="title">#222222</color>
 
-    <!--firebase ravi tutorial stuff-->
+    <!--login menu-->
     <color name="bg_login">#26ae90</color>
     <color name="bg_register">#2e3237</color>
     <color name="bg_main">#428bca</color>
@@ -24,4 +24,6 @@
     <color name="btn_login_bg">#eceef1</color>
     <color name="lbl_name">#333333</color>
     <color name="btn_logut_bg">#ff6861</color>
+
+    <color name="orange">#E59400</color>
 </resources>

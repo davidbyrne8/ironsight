@@ -36,10 +36,12 @@
         </activity>
         <activity
             android:name=".activity.MainActivity"
-            android:label="@string/title_activity_login" />
+            android:windowSoftInputMode="stateHidden" /> <!-- hides text input keyboard oncreate -->
+        android:label="@string/title_activity_login" />
         <activity android:name=".activity.GameActivity" />
-        <activity android:name=".activity.ResetPasswordActivity"></activity>
+        <activity android:name=".activity.ResetPasswordActivity" />
         <activity android:name=".activity.SignupActivity" />
+        <activity android:name=".activity.SettingsActivity"></activity>
     </application>
 
 </manifest>
