@@ -150,3 +150,12 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         }
     }
 }
+
+/*LAST CHANGES:
+*
+added unirest and json jars
+not working HttpResponse code (cant convert response to readable string etc), usure if works as cannot test
+added a textview to test response
+on IGDB discord now
+using postman to test requests
+*/
