@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.davebyrne.ironsight.R;
@@ -14,6 +15,14 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+import com.mashape.unirest.http.exceptions.UnirestException;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.util.EntityUtils;
+
+import java.io.IOException;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -44,6 +53,23 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             }
         };
+
+        /*API testing*/
+
+
+//        HttpResponse<String> response;
+//        try {
+//            response = Unirest.get("https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name&limit=10&offset=0&order=release_dates.date%3Adesc&search=zelda").header("X-Mashape-Key", "AFXAvMmPFomsh0uI1lI2rSPBuW6Up1dajCMjsnD6zANBvkP0Ny").header("Accept", "application/json").asString();
+//
+//            final TextView test = (TextView) findViewById(R.id.textView4);
+//            test.setText((CharSequence) response);
+//
+//        } catch (UnirestException e) {
+//            e.printStackTrace();
+//        }
+
+
+        /*end testing*/
 
         /*SIGN OUT*/
 
