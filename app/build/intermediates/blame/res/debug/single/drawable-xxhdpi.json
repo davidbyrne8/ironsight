@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_login_logo.png",
+        "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\drawable-xxhdpi\\ic_login_logo.png"
+    },
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_profile.png",
+        "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\drawable-xxhdpi\\ic_profile.png"
+    },
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_search_action.png",
+        "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\drawable-xxhdpi\\ic_search_action.png"
+    }
+]

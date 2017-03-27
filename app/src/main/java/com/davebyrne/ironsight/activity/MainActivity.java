@@ -67,11 +67,12 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
             }
         };
 
-        try {
-            HttpResponse response = Unirest.get("https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name&limit=10&offset=0&order=release_dates.date%3Adesc&search=zelda").header("X-Mashape-Key", "AFXAvMmPFomsh0uI1lI2rSPBuW6Up1dajCMjsnD6zANBvkP0Ny").header("Accept", "application/json").asJson();
-        } catch (UnirestException e) {
-            e.printStackTrace();
-        }
+        //direct from IGDB code
+//        try {
+//            HttpResponse response = Unirest.get("https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name&limit=10&offset=0&order=release_dates.date%3Adesc&search=zelda").header("X-Mashape-Key", "AFXAvMmPFomsh0uI1lI2rSPBuW6Up1dajCMjsnD6zANBvkP0Ny").header("Accept", "application/json").asJson();
+//        } catch (UnirestException e) {
+//            e.printStackTrace();
+//        }
 
 
     }
