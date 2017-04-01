@@ -15,6 +15,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.mashape.unirest.http.HttpResponse;
 import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
@@ -22,6 +27,7 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.util.EntityUtils;
+import org.w3c.dom.Text;
 
 import java.io.IOException;
 
@@ -31,6 +37,9 @@ public class SettingsActivity extends AppCompatActivity {
     private FirebaseAuth.AuthStateListener authListener;
     private ProgressBar progressBar;
     private Button btnSignup, btnLogin, btnReset;
+    private TextView test;
+    //DB testing
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +47,8 @@ public class SettingsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        //DB testing
+        mDatabase = FirebaseDatabase.getInstance().getReference().child("Name"); //for child references, add this e.g. .child("game_01")
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
@@ -112,6 +123,21 @@ public class SettingsActivity extends AppCompatActivity {
 //
 //            }
 //        });
+
+        //DB testing
+        test = (TextView) findViewById(R.id.textView4);
+        mDatabase.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                String name = dataSnapshot.getValue().toString();
+                test.setText(name);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
     }
 
     public void signOut() {

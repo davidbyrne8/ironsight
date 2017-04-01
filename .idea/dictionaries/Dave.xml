@@ -2,6 +2,8 @@
   <dictionary name="Dave">
     <words>
       <w>firebase</w>
+      <w>firebaselistadpater</w>
+      <w>gamenames</w>
     </words>
   </dictionary>
 </component>

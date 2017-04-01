@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="21"
-        android:targetSdkVersion="24" />
+        android:targetSdkVersion="25" />
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -58,6 +58,77 @@
         <activity android:name="com.davebyrne.ironsight.activity.SignupActivity" />
         <activity android:name="com.davebyrne.ironsight.activity.SettingsActivity" />
         <activity
+            android:name="com.firebase.ui.auth.ui.email.ConfirmRecoverPasswordActivity"
+            android:theme="@style/FirebaseUI.Dialog" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.email.EmailHintContainerActivity"
+            android:theme="@style/FirebaseUI.Translucent" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity"
+            android:theme="@style/FirebaseUI" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.email.RegisterEmailActivity"
+            android:theme="@style/FirebaseUI" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.email.SignInNoPasswordActivity"
+            android:theme="@style/FirebaseUI" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.email.SignInActivity"
+            android:theme="@style/FirebaseUI" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.account_link.SaveCredentialsActivity"
+            android:theme="@style/FirebaseUI.Translucent" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.account_link.AccountLinkInitActivity"
+            android:theme="@style/FirebaseUI" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.account_link.WelcomeBackIDPPrompt"
+            android:theme="@style/FirebaseUI" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.account_link.WelcomeBackPasswordPrompt"
+            android:theme="@style/FirebaseUI" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"
+            android:theme="@style/FirebaseUI" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.idp.IDPSignInContainerActivity"
+            android:theme="@style/FirebaseUI.Translucent" >
+        </activity>
+        <activity
+            android:name="com.firebase.ui.auth.ui.ChooseAccountActivity"
+            android:theme="@style/FirebaseUI.Translucent" >
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/FirebaseUI.Translucent" />
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <activity
             android:name="com.google.android.gms.common.api.GoogleApiActivity"
             android:exported="false"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
@@ -87,7 +158,6 @@
             android:permission="com.google.android.c2dm.permission.SEND" >
             <intent-filter>
                 <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
 
                 <category android:name="com.davebyrne.ironsight" />
             </intent-filter>
