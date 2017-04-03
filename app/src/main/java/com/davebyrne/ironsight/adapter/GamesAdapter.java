@@ -26,7 +26,6 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.MyViewHolder
             super(view);
             title = (TextView) view.findViewById(R.id.title);
             genre = (TextView) view.findViewById(R.id.genre);
-            year = (TextView) view.findViewById(R.id.year);
         }
     }
 
@@ -46,9 +45,8 @@ public class GamesAdapter extends RecyclerView.Adapter<GamesAdapter.MyViewHolder
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
         Game game = gamesList.get(position);
-        holder.title.setText(game.getTitle());
-        holder.genre.setText(game.getGenre());
-        holder.year.setText(game.getDate());
+        holder.title.setText(game.getGameName());
+        holder.genre.setText(game.getGameGenre());
     }
 
     @Override

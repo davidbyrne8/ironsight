@@ -55,14 +55,12 @@ public class SuggestedListFragment extends Fragment{
             @Override
             public void onClick(View view, int position) {
                 Game game = gameList.get(position);
-                String title = game.getTitle();
-                String genre = game.getGenre();
-                String date = game.getDate();
+                String name = game.getGameName();
+                String genre = game.getGameGenre();
 
                 Intent i = new Intent(getActivity().getApplicationContext(), GameActivity.class);
-                i.putExtra("gameTitle", title);
+                i.putExtra("gameTitle", name);
                 i.putExtra("gameGenre", genre);
-                i.putExtra("gameDate", date);
                 startActivity(i);
                 //Toast.makeText(getActivity().getApplicationContext(), game.getTitle() + " is selected!", Toast.LENGTH_SHORT).show(); //tests if working
             }

@@ -48,7 +48,6 @@ public class SettingsActivity extends AppCompatActivity {
 
         final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         //DB testing
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("Name"); //for child references, add this e.g. .child("game_01")
 
         //Get Firebase auth instance
         auth = FirebaseAuth.getInstance();
@@ -65,25 +64,6 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             }
         };
-
-        /*API testing*/
-
-
-//        HttpResponse response;
-//        try {
-//            response = Unirest.get("https://igdbcom-internet-game-database-v1.p.mashape.com/games/?fields=name&limit=10&offset=0&order=release_dates.date%3Adesc&search=zelda").header("X-Mashape-Key", "AFXAvMmPFomsh0uI1lI2rSPBuW6Up1dajCMjsnD6zANBvkP0Ny").header("Accept", "application/json").asJson();
-//
-////            final TextView test = (TextView) findViewById(R.id.textView4);
-////            test.setText((CharSequence) response);
-//
-//
-//
-//        } catch (UnirestException e) {
-//            e.printStackTrace();
-//        }
-
-
-        /*end testing*/
 
         /*SIGN OUT*/
 
@@ -124,20 +104,7 @@ public class SettingsActivity extends AppCompatActivity {
 //            }
 //        });
 
-        //DB testing
-        test = (TextView) findViewById(R.id.textView4);
-        mDatabase.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                String name = dataSnapshot.getValue().toString();
-                test.setText(name);
-            }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-
-            }
-        });
     }
 
     public void signOut() {

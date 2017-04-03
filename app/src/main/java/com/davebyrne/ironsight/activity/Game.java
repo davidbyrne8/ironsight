@@ -6,38 +6,29 @@ package com.davebyrne.ironsight.activity;
 
 public class Game {
 
-    private String title, genre, date;
+    String gameId;
+    String gameName;
+    String gameGenre;
 
-    public Game() {
+    public Game(){
+
     }
 
-    public Game(String title, String genre, String date) {
-        this.genre = genre;
-        this.date = date;
-        this.title = title;
+    public Game(String gameId, String gameName, String gameGenre) {
+        this.gameId = gameId;
+        this.gameName = gameName;
+        this.gameGenre = gameGenre;
     }
 
-    public String getTitle() {
-        return title;
+    public String getGameId() {
+        return gameId;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public String getGameName() {
+        return gameName;
     }
 
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
+    public String getGameGenre() {
+        return gameGenre;
     }
 }

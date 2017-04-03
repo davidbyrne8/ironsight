@@ -3,31 +3,37 @@ package com.davebyrne.ironsight.activity;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.davebyrne.ironsight.R;
-import com.firebase.ui.database.FirebaseListAdapter;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.davebyrne.ironsight.R.id.listView1;
-
 
 public class MainListFragment extends Fragment {
 
-    private List<Game> gameList = new ArrayList<>();
-    private ListView listView;
-    private DatabaseReference mDatabase;
-    private ArrayList<String> mGamenames = new ArrayList<>();
-    private FirebaseListAdapter mAdapter;
+    List<Game> gameList;
+    ListView listViewGames;
+    private DatabaseReference databaseGames;
+
+    //data entry
+    EditText editTextName;
+    Button buttonAdd;
+    Spinner spinnerGenres;
 
     public MainListFragment() {
         // Required empty public constructor
@@ -46,11 +52,29 @@ public class MainListFragment extends Fragment {
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_mainlist, container, false);
 
-        //references the firebase database root node
-        mDatabase = FirebaseDatabase.getInstance().getReference().child("games"); //for child references, add this e.g. .child("games")
+        //data entry
+        editTextName = (EditText) rootView.findViewById(R.id.editTextName);
+        buttonAdd = (Button) rootView.findViewById(R.id.add);
+        spinnerGenres = (Spinner) rootView.findViewById(R.id.spinnerGenre);
 
-        // Inflate the layout for this fragment
-        listView = (ListView) rootView.findViewById(listView1);
+        buttonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addGame();
+
+            }
+        });
+
+
+
+        //references the firebase database games node
+        databaseGames = FirebaseDatabase.getInstance().getReference("games"); //for child references, add this e.g. .child("games")
+
+        listViewGames = (ListView) rootView.findViewById(R.id.listViewGames);
+
+         gameList = new ArrayList<>();
+
+
 
         //use firebase list adapter to populate the lists, crashes at when loading MainListFragment activity
 //        FirebaseListAdapter<String> firebaseListAdapter = new FirebaseListAdapter<String>((Activity) getActivity().getApplicationContext(), String.class, android.R.layout.two_line_list_item, mDatabase) {
@@ -99,12 +123,13 @@ public class MainListFragment extends Fragment {
 //            }
 //        });
 
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(getActivity().getApplicationContext(), "works", Toast.LENGTH_SHORT).show();
-            }
-        });
+        //testing listview entry clicks
+//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Toast.makeText(getActivity().getApplicationContext(), "works", Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         //this is for clicking the list entries
 //        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity().getApplicationContext(), recyclerView, new ClickListener() {
@@ -132,6 +157,54 @@ public class MainListFragment extends Fragment {
 
 
         return rootView;
+    }
+
+    private void addGame() {
+        String name = editTextName.getText().toString().trim();
+        String genre = spinnerGenres.getSelectedItem().toString();
+
+        if(!TextUtils.isEmpty(name)){
+            String id = databaseGames.push().getKey(); //creates unique string entry
+
+            Game game = new Game(id, name, genre);
+
+            databaseGames.child(id).setValue(game); //sets the new user input value to the unique key string
+            Toast.makeText(getActivity().getApplicationContext(), "Game added", Toast.LENGTH_SHORT).show();
+
+        }
+        else{
+            Toast.makeText(getActivity().getApplicationContext(), "Please enter a name", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        databaseGames.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) { //any time database is changed
+
+                gameList.clear(); //need to clear if it contains any game previously as the dataSnapshot will contain every game each time it is executed
+
+                for(DataSnapshot gameSnapshot: dataSnapshot.getChildren()){ //iterate through all values of the database (games)
+                    Game game = gameSnapshot.getValue(Game.class);
+
+                    gameList.add(game);
+
+                }
+
+                //getActivity() in a Fragment returns the Activity the Fragment is currently associated with
+                //may be an issue as getActivity gets the MainActivity, maybe need to get MainListFragment activity
+                GameList adapter = new GameList(getActivity(), gameList);
+                listViewGames.setAdapter(adapter);
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) { //handles errors
+
+            }
+        });
     }
 
     //temporary hard coded data

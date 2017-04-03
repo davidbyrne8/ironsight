@@ -288,6 +288,10 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\a738481c83c9fd7434e3ddc9326b4d4e95117ff0\\output\\res\\layout\\fragment_firebase_login.xml"
     },
     {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_layout.xml",
+        "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\layout\\list_layout.xml"
+    },
+    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\layout\\abc_action_bar_title_item.xml"
     },
@@ -302,10 +306,6 @@
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_large.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\layout\\messenger_button_send_blue_large.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_games.xml",
-        "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\layout\\list_games.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\idp_button_google.xml",
