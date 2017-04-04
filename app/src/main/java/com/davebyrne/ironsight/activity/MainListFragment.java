@@ -72,56 +72,8 @@ public class MainListFragment extends Fragment {
 
         listViewGames = (ListView) rootView.findViewById(R.id.listViewGames);
 
-         gameList = new ArrayList<>();
+        gameList = new ArrayList<>();
 
-
-
-        //use firebase list adapter to populate the lists, crashes at when loading MainListFragment activity
-//        FirebaseListAdapter<String> firebaseListAdapter = new FirebaseListAdapter<String>((Activity) getActivity().getApplicationContext(), String.class, android.R.layout.two_line_list_item, mDatabase) {
-//            @Override
-//            protected void populateView(View v, String model, int position) {
-//
-//            }
-//        };
-
-        //firebaselistadpater attempt
-//        mAdapter = new FirebaseListAdapter<Game>(this, Game.class, android.R.layout.two_line_list_item, mDatabase) {
-//            @Override
-//            protected void populateView(View view, Game game, int position) {
-//                ((TextView)view.findViewById(android.R.id.text1)).setText(game.getJSON));
-
-
-        //populating simple DB entries to the list, just single text game titles
-//        mDatabase.addChildEventListener(new ChildEventListener() {
-//            @Override
-//            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-//
-//                String value = dataSnapshot.getValue(String.class);
-//                mGamenames.add(value);
-//
-//                arrayAdapter.notifyDataSetChanged();
-//            }
-//
-//            @Override
-//            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-//
-//            }
-//
-//            @Override
-//            public void onChildRemoved(DataSnapshot dataSnapshot) {
-//
-//            }
-//
-//            @Override
-//            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
 
         //testing listview entry clicks
 //        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -159,14 +111,17 @@ public class MainListFragment extends Fragment {
         return rootView;
     }
 
+    //add game with text and spinner input, to be removed
     private void addGame() {
         String name = editTextName.getText().toString().trim();
         String genre = spinnerGenres.getSelectedItem().toString();
+        String date = "01/02/03";
+        String plat = "PC";
 
         if(!TextUtils.isEmpty(name)){
             String id = databaseGames.push().getKey(); //creates unique string entry
 
-            Game game = new Game(id, name, genre);
+            Game game = new Game(id, name, genre, date, plat);
 
             databaseGames.child(id).setValue(game); //sets the new user input value to the unique key string
             Toast.makeText(getActivity().getApplicationContext(), "Game added", Toast.LENGTH_SHORT).show();
@@ -177,6 +132,7 @@ public class MainListFragment extends Fragment {
         }
     }
 
+    //adds each game object from DB to an array (gameList) and sets the array to listViewGames (ListView) using the adapter (GameList)
     @Override
     public void onStart() {
         super.onStart();
@@ -188,6 +144,7 @@ public class MainListFragment extends Fragment {
                 gameList.clear(); //need to clear if it contains any game previously as the dataSnapshot will contain every game each time it is executed
 
                 for(DataSnapshot gameSnapshot: dataSnapshot.getChildren()){ //iterate through all values of the database (games)
+
                     Game game = gameSnapshot.getValue(Game.class);
 
                     gameList.add(game);
@@ -195,7 +152,6 @@ public class MainListFragment extends Fragment {
                 }
 
                 //getActivity() in a Fragment returns the Activity the Fragment is currently associated with
-                //may be an issue as getActivity gets the MainActivity, maybe need to get MainListFragment activity
                 GameList adapter = new GameList(getActivity(), gameList);
                 listViewGames.setAdapter(adapter);
             }
@@ -206,61 +162,6 @@ public class MainListFragment extends Fragment {
             }
         });
     }
-
-    //temporary hard coded data
-//    private void prepareGameData() {
-//
-//
-////        Game game = new Game("Super Mario Run", "Platformer", "18/11/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Stardew Valley", "Strategy", "19/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Dead Rising", "Survival", "20/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("The Last Guardian", "Adventure", "20/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Steep", "Sports", "21/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Final Fantasy 15", "RPG", "22/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Pokemon Sun/Moon", "RPG", "23/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Dishonored 2", "FPS", "24/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Tyranny", "RPG", "25/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Owlboy", "Platformer", "26/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Civilization 6", "Strategy", "27/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("TitanFall 2", "Animation", "28/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Root Letter", "Indie", "29/11/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Watch Dogs 2", "Action", "30/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Minimal", "Adventure", "30/12/2016");
-////        gameList.add(game);
-////
-////        game = new Game("Total War", "Strategy", "31/12/2016");
-////        gameList.add(game);
-//
-////        mAdapter.notifyDataSetChanged();
-//    }
 
 
 

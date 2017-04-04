@@ -71,38 +71,10 @@ public class SuggestedListFragment extends Fragment{
             }
         }));
 
-        prepareGameData();
 
         return rootView;
     }
 
-    private void prepareGameData() {
-        Game game = new Game("Super Mario Run", "Platformer", "18/11/2016");
-        gameList.add(game);
-
-        game = new Game("Stardew Valley", "Strategy", "19/12/2016");
-        gameList.add(game);
-
-        game = new Game("Dead Rising", "Survival", "20/12/2016");
-        gameList.add(game);
-
-        game = new Game("Steep", "Sports", "21/12/2016");
-        gameList.add(game);
-
-        game = new Game("Dishonored 2", "FPS", "24/12/2016");
-        gameList.add(game);
-
-        game = new Game("Root Letter", "Indie", "29/11/2016");
-        gameList.add(game);
-
-        game = new Game("Watch Dogs 2", "Action", "30/12/2016");
-        gameList.add(game);
-
-        game = new Game("Minimal", "Adventure", "30/12/2016");
-        gameList.add(game);
-
-        mAdapter.notifyDataSetChanged();
-    }
 
 
     @Override

@@ -65,6 +65,7 @@ MERGED from [com.google.firebase:firebase-auth:10.2.1] C:\Users\Dave\.android\bu
 MERGED from [com.google.firebase:firebase-crash:10.2.1] C:\Users\Dave\.android\build-cache\a0c5efe35f074b42ec62665ac2cbc91ff575d86d\output\AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\Dave\.android\build-cache\0e706d99758a3facb7822ecb74353228ee80e135\output\AndroidManifest.xml:19:5-25:19
 MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Dave\.android\build-cache\c9c92060f7c66a69fd326ebd027b99c6994a54cf\output\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:19:5-29:19
 MERGED from [com.google.firebase:firebase-core:10.2.1] C:\Users\Dave\.android\build-cache\335e249d81bb7b12711ed75f18317c2fbfd082a6\output\AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-analytics:10.2.1] C:\Users\Dave\.android\build-cache\22e688c5391b6c3800c9f960477a760aeb88a5f1\output\AndroidManifest.xml:24:5-33:19
 MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] C:\Users\Dave\.android\build-cache\8409d52051d18dac95917f9aaa6111f0e5df0013\output\AndroidManifest.xml:24:5-28:19
@@ -146,6 +147,7 @@ MERGED from [com.google.firebase:firebase-crash:10.2.1] C:\Users\Dave\.android\b
 MERGED from [com.google.android.gms:play-services-auth:10.2.1] C:\Users\Dave\.android\build-cache\0e706d99758a3facb7822ecb74353228ee80e135\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-auth-base:10.2.1] C:\Users\Dave\.android\build-cache\e053d0da71819cb82c5bc57c7356ac34999aeeca\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Dave\.android\build-cache\c9c92060f7c66a69fd326ebd027b99c6994a54cf\output\AndroidManifest.xml:17:5-43
+MERGED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-core:10.2.1] C:\Users\Dave\.android\build-cache\335e249d81bb7b12711ed75f18317c2fbfd082a6\output\AndroidManifest.xml:4:5-43
 MERGED from [com.google.firebase:firebase-analytics:10.2.1] C:\Users\Dave\.android\build-cache\22e688c5391b6c3800c9f960477a760aeb88a5f1\output\AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] C:\Users\Dave\.android\build-cache\8409d52051d18dac95917f9aaa6111f0e5df0013\output\AndroidManifest.xml:17:5-43
@@ -281,6 +283,20 @@ ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Dave\.and
 		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Dave\.android\build-cache\c9c92060f7c66a69fd326ebd027b99c6994a54cf\output\AndroidManifest.xml:19:86-145
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:10.2.1] C:\Users\Dave\.android\build-cache\c9c92060f7c66a69fd326ebd027b99c6994a54cf\output\AndroidManifest.xml:19:19-85
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:23:9-27:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:23:88-111
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:23:18-87
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:24:13-26:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:24:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:25:17-77
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:25:25-75
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:10.2.1] C:\Users\Dave\.android\build-cache\22e688c5391b6c3800c9f960477a760aeb88a5f1\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] C:\Users\Dave\.android\build-cache\8409d52051d18dac95917f9aaa6111f0e5df0013\output\AndroidManifest.xml:21:5-78

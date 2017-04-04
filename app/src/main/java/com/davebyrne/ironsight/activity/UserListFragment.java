@@ -70,31 +70,8 @@ public class UserListFragment extends Fragment {
             }
         }));
 
-        prepareGameData();
 
         return rootView;
-    }
-
-    private void prepareGameData() {
-        Game game = new Game("Super Mario Run", "Platformer", "18/11/2016");
-        gameList.add(game);
-
-        game = new Game("Final Fantasy 15", "RPG", "22/12/2016");
-        gameList.add(game);
-
-        game = new Game("Pokemon Sun/Moon", "RPG", "23/12/2016");
-        gameList.add(game);
-
-        game = new Game("Dishonored 2", "FPS", "24/12/2016");
-        gameList.add(game);
-
-        game = new Game("Civilization 6", "Strategy", "27/12/2016");
-        gameList.add(game);
-
-        game = new Game("Total War", "Strategy", "31/12/2016");
-        gameList.add(game);
-
-        mAdapter.notifyDataSetChanged();
     }
 
     @Override

@@ -36,12 +36,12 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\idp_button_background_google.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\590599a6878808204c3d5f5f2458ed44ba80bf74\\output\\res\\drawable\\idp_button_background_google.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\c9c92060f7c66a69fd326ebd027b99c6994a54cf\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\idp_button_background_google.xml",
+        "source": "C:\\Users\\Dave\\.android\\build-cache\\590599a6878808204c3d5f5f2458ed44ba80bf74\\output\\res\\drawable\\idp_button_background_google.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",

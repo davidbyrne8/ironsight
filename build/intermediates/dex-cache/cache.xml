@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2795605611cc6eb81b8d8d1e1384881b95045de3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Dave\.android\build-cache\22e688c5391b6c3800c9f960477a760aeb88a5f1\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
@@ -169,7 +178,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="132cd4d5c16bff04fdec7e3f7e1be4162c7b0181">
+        sha1="ad797c1495237a92cdee80b237e3ff90986a8db1">
         <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7543d4cfae22fdb7cefb04ca8a7e175a2305d172\classes.dex" />
     </item>
     <item

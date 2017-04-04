@@ -149,6 +149,7 @@
     <orderEntry type="library" exported="" name="httpcore-4.4.1" level="project" />
     <orderEntry type="library" exported="" name="support-vector-drawable-24.2.1" level="project" />
     <orderEntry type="library" exported="" name="firebase-analytics-impl-10.2.1" level="project" />
+    <orderEntry type="library" exported="" name="firebase-messaging-10.2.1" level="project" />
     <orderEntry type="library" exported="" name="support-core-utils-24.2.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="javax.inject-1" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-24.2.1" level="project" />
