@@ -1,12 +1,14 @@
 package com.davebyrne.ironsight.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -56,17 +58,30 @@ public class MainListFragment extends Fragment {
 
         gameList = new ArrayList<>();
 
+        //clicking a list item, sends that instance of the game to the game activity for full game details
+        listViewGames.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Game gameInstance = gameList.get(position);
+                String title = gameInstance.getGameName();
+                String genre = gameInstance.getGameGenre();
+                String date = gameInstance.getGameDate();
+                String plat = gameInstance.getGamePlat();
+                String identification = gameInstance.getGameId();
 
-        //testing listview entry clicks
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                Toast.makeText(getActivity().getApplicationContext(), "works", Toast.LENGTH_SHORT).show();
-//            }
-//        });
+
+                Intent i = new Intent(getActivity().getApplicationContext(), GameActivity.class);
+                i.putExtra("gameName", title);
+                i.putExtra("gameGenre", genre);
+                i.putExtra("gameDate", date);
+                i.putExtra("gamePlat", plat);
+                i.putExtra("gameId", identification);
+                startActivity(i);
+            }
+        });
 
         //this is for clicking the list entries
-//        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity().getApplicationContext(), recyclerView, new ClickListener() {
+//        listViewGames.addOnItemTouchListener(new RecyclerTouchListener(getActivity().getApplicationContext(), recyclerView, new ClickListener() {
 //            @Override
 //            public void onClick(View view, int position) {
 //                Game game = gameList.get(position);

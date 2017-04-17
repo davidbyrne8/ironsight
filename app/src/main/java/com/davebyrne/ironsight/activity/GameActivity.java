@@ -21,20 +21,21 @@ public class GameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_game);
 
         Intent i = getIntent();
-        final String title = getIntent().getStringExtra("gameTitle");
+        final String title = getIntent().getStringExtra("gameName");
         final String genre = getIntent().getStringExtra("gameGenre");
         final String date = getIntent().getStringExtra("gameDate");
-        //Game game = (Game) i.getSerializableExtra("gameId");
+        final String plat = getIntent().getStringExtra("gamePlat");
+        final String identification = getIntent().getStringExtra("gameId");
 
         final TextView tv1 = (TextView) findViewById(R.id.textView);
         final TextView tv2 = (TextView) findViewById(R.id.textView2);
         final TextView tv3 = (TextView) findViewById(R.id.textView3);
+        final TextView tv5 = (TextView) findViewById(R.id.textView5);
 
         tv1.setText(title);
         tv2.setText(genre);
         tv3.setText(date);
-//        tv2.setText(game.getGenre());
-//        tv3.setText(game.getYear());
+        tv5.setText(plat);
 
         Button addBtn = (Button) findViewById(R.id.button2);
         Button infoBtn = (Button) findViewById(R.id.button3);
