@@ -30,11 +30,6 @@ public class MainListFragment extends Fragment {
     ListView listViewGames;
     private DatabaseReference databaseGames;
 
-    //data entry
-    EditText editTextName;
-    Button buttonAdd;
-    Spinner spinnerGenres;
-
     public MainListFragment() {
         // Required empty public constructor
     }
@@ -51,19 +46,6 @@ public class MainListFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_mainlist, container, false);
-
-        //data entry
-        editTextName = (EditText) rootView.findViewById(R.id.editTextName);
-        buttonAdd = (Button) rootView.findViewById(R.id.add);
-        spinnerGenres = (Spinner) rootView.findViewById(R.id.spinnerGenre);
-
-        buttonAdd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                addGame();
-
-            }
-        });
 
 
 
@@ -109,27 +91,6 @@ public class MainListFragment extends Fragment {
 
 
         return rootView;
-    }
-
-    //add game with text and spinner input, to be removed
-    private void addGame() {
-        String name = editTextName.getText().toString().trim();
-        String genre = spinnerGenres.getSelectedItem().toString();
-        String date = "01/02/03";
-        String plat = "PC";
-
-        if(!TextUtils.isEmpty(name)){
-            String id = databaseGames.push().getKey(); //creates unique string entry
-
-            Game game = new Game(id, name, genre, date, plat);
-
-            databaseGames.child(id).setValue(game); //sets the new user input value to the unique key string
-            Toast.makeText(getActivity().getApplicationContext(), "Game added", Toast.LENGTH_SHORT).show();
-
-        }
-        else{
-            Toast.makeText(getActivity().getApplicationContext(), "Please enter a name", Toast.LENGTH_SHORT).show();
-        }
     }
 
     //adds each game object from DB to an array (gameList) and sets the array to listViewGames (ListView) using the adapter (GameList)

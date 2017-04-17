@@ -12,6 +12,8 @@ public class Game {
     String gameDate;
     String gamePlat;
 
+
+
     public Game(){
 
     }
