@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
     private FragmentDrawer drawerFragment;
     private FirebaseAuth auth; //this and next line enable firebase user account functionality
     private FirebaseAuth.AuthStateListener authListener;
-    private DatabaseReference databaseUsers; //this
+    private DatabaseReference databaseUsers;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        databaseUsers = FirebaseDatabase.getInstance().getReference("users"); //this
+        databaseUsers = FirebaseDatabase.getInstance().getReference("users");
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -67,14 +67,14 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
                     finish();
                 }
                 else{ //this
-                    writeNewUser(user.getUid(), user.getEmail()); //this
+                    writeNewUser(user.getUid(), user.getEmail()); //this is removing the added games every time the user accesses mainactivity, with just email and ID
                 }
             }
         };
 
     }
 
-    private void writeNewUser(String userId, String email) { //this all
+    private void writeNewUser(String userId, String email) {
         User user = new User(email);
 
         databaseUsers.child(userId).setValue(user);

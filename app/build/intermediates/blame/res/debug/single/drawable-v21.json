@@ -1,31 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\78a744af7d5508ff422848689128b66eec331e89\\output\\res\\drawable-v21\\avd_show_password.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\a7b094ced993e477fb2ea1126f5d386697956fdc\\output\\res\\drawable-v21\\notification_action_background.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\78a744af7d5508ff422848689128b66eec331e89\\output\\res\\drawable-v21\\design_password_eye.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\d429d491ebd07f21d033faf4f25171ae03682ff1\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\78a744af7d5508ff422848689128b66eec331e89\\output\\res\\drawable-v21\\avd_hide_password.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",

@@ -16,10 +16,6 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\drawable\\com_facebook_button_login_silver_background.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\a7b094ced993e477fb2ea1126f5d386697956fdc\\output\\res\\drawable\\notification_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
@@ -36,12 +32,12 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\idp_button_background_google.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\590599a6878808204c3d5f5f2458ed44ba80bf74\\output\\res\\drawable\\idp_button_background_google.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark_normal.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\c9c92060f7c66a69fd326ebd027b99c6994a54cf\\output\\res\\drawable\\common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\idp_button_background_google.xml",
+        "source": "C:\\Users\\Dave\\.android\\build-cache\\590599a6878808204c3d5f5f2458ed44ba80bf74\\output\\res\\drawable\\idp_button_background_google.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
@@ -152,12 +148,12 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_blue_bg_round.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\drawable\\messenger_button_blue_bg_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\messenger_button_white_bg_round.xml",
@@ -220,28 +216,20 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_icon_background.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\a7b094ced993e477fb2ea1126f5d386697956fdc\\output\\res\\drawable\\notification_icon_background.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\cd6d11b432c6cc006124c7212282990fd8d9fa06\\output\\res\\drawable\\design_fab_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_button_like_background.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\drawable\\com_facebook_button_like_background.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
+        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_tile_bg.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\a7b094ced993e477fb2ea1126f5d386697956fdc\\output\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
@@ -252,12 +240,12 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\or_line.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\a738481c83c9fd7434e3ddc9326b4d4e95117ff0\\output\\res\\drawable\\or_line.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -290,10 +278,6 @@
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\com_facebook_auth_dialog_cancel_background.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\drawable\\com_facebook_auth_dialog_cancel_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\a7b094ced993e477fb2ea1126f5d386697956fdc\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark_focused.xml",

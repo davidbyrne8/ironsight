@@ -6,33 +6,26 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1493061719212"
+    timestamp="1493068300025"
     token="3141829508147777112"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="304" />
+        duration="276" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="74" />
+        duration="0" />
     <task
         name="verifier"
-        duration="6" />
-
-    <artifact
-        location="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
+        duration="0" />
 
     <build
         build-mode="FULL"
-        timestamp="1493053200906"
+        timestamp="1493067262414"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -73,15 +66,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1493061329123"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1493061719212"
+        timestamp="1493067668478"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -90,5 +75,9 @@
             location="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
+    <build
+        build-mode="COLD"
+        timestamp="1493068300025"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

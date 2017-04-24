@@ -1,4 +1,4 @@
-#Tue Apr 04 10:38:50 BST 2017
+#Mon Apr 24 21:32:31 BST 2017
 file.9=C\:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_87e6fa7654286d560f42b4102addbd92b36dca0e\\classes.dex
 base.10=C\:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_981c4a14adfd71ee460b7a21e9e7aacb721afb01
 file.8=C\:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\unirest-java-1.4.9_d64349e3f7c22543c060260ac015feec3d88a401\\classes.dex

@@ -4,14 +4,6 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\color\\abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_dark.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\a7b094ced993e477fb2ea1126f5d386697956fdc\\output\\res\\color\\abc_hint_foreground_material_dark.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_btn_colored_text_material.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\4b8308ea93dcbecdf4a0e24f0f50ebd7a50ac446\\output\\res\\color\\abc_btn_colored_text_material.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_switch_thumb.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\color\\abc_tint_switch_thumb.xml"
     },
@@ -48,10 +40,6 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\color\\com_facebook_send_button_text_color.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_hint_foreground_material_light.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\a7b094ced993e477fb2ea1126f5d386697956fdc\\output\\res\\color\\abc_hint_foreground_material_light.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_tint_btn_checkable.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\color\\abc_tint_btn_checkable.xml"
     },
@@ -64,12 +52,12 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\color\\abc_search_url_text.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\color\\com_facebook_button_text_color.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\color\\com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\color\\abc_search_url_text.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
