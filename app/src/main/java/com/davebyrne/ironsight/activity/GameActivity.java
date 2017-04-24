@@ -79,7 +79,6 @@ public class GameActivity extends AppCompatActivity {
 
     private void writeNewGame(Game game) { //this all
         Game newGame = game;
-
         databaseUserList.child(game.getGameId()).setValue(newGame);
     }
 }

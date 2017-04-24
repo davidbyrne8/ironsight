@@ -228,6 +228,10 @@
         "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\layout\\activity_game.xml"
     },
     {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_create_profile.xml",
+        "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\layout\\activity_create_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\Users\\Dave\\.android\\build-cache\\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },

@@ -8,9 +8,10 @@
     tools:context="com.davebyrne.ironsight.activity.MainActivity">
 
 
-    <android.support.v7.widget.RecyclerView
+    <ListView
+        android:id="@+id/listViewGames"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:id="@+id/recyclerView"/>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/add" />
 </RelativeLayout>

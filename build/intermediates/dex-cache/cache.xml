@@ -3,6 +3,33 @@
 
     <item
         is-multidex="true"
+        jar="C:\Users\Dave\.android\build-cache\3dc20c0c89ad03d16918b0407cbea037b64c605f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f2d17b835305bb4bbbeaba83853b10d11cbb01fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_33c70b3e464adbe3167d0dde0a9a54a1fbe13225\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Dave\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_cf9337fbb71280dfeac6a96697d12de6920e8f58\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Dave\Documents\IronSightProject\ironsight\app\libs\unirest-java-1.4.9.jar"
         jumboMode="true"
         optimize="true"
@@ -16,17 +43,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="03e944562a444b65de18c040411785923aacd4f0">
+        sha1="06715717f2248f72ea8e7ee7a73c7a8446f779b5">
         <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7543d4cfae22fdb7cefb04ca8a7e175a2305d172\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_33c70b3e464adbe3167d0dde0a9a54a1fbe13225\classes.dex" />
     </item>
     <item
         is-multidex="true"

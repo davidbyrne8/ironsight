@@ -41,7 +41,8 @@
         <activity android:name=".activity.GameActivity" />
         <activity android:name=".activity.ResetPasswordActivity" />
         <activity android:name=".activity.SignupActivity" />
-        <activity android:name=".activity.SettingsActivity"></activity>
+        <activity android:name=".activity.SettingsActivity" />
+        <activity android:name=".activity.CreateProfileActivity"></activity>
     </application>
 
 </manifest>
