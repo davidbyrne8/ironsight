@@ -17,6 +17,8 @@ import android.widget.Toast;
 import com.davebyrne.ironsight.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
 
@@ -26,11 +28,14 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
     private FragmentDrawer drawerFragment;
     private FirebaseAuth auth; //this and next line enable firebase user account functionality
     private FirebaseAuth.AuthStateListener authListener;
+    private DatabaseReference databaseUsers; //this
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        databaseUsers = FirebaseDatabase.getInstance().getReference("users"); //this
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
@@ -61,9 +66,18 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
                     startActivity(new Intent(MainActivity.this, LoginActivity.class));
                     finish();
                 }
+                else{ //this
+                    writeNewUser(user.getUid(), user.getEmail()); //this
+                }
             }
         };
 
+    }
+
+    private void writeNewUser(String userId, String email) { //this all
+        User user = new User(email);
+
+        databaseUsers.child(userId).setValue(user);
     }
 
 

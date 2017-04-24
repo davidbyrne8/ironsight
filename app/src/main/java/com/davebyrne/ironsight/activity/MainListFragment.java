@@ -108,6 +108,7 @@ public class MainListFragment extends Fragment {
         return rootView;
     }
 
+    //this just populates the screen with DB entries from the specified DB location set above
     //adds each game object from DB to an array (gameList) and sets the array to listViewGames (ListView) using the adapter (GameList)
     @Override
     public void onStart() {

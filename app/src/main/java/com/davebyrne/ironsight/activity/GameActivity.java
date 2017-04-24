@@ -44,6 +44,7 @@ public class GameActivity extends AppCompatActivity {
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Toast.makeText(getApplicationContext(), title + " added to your list.",Toast.LENGTH_SHORT).show();
             }
         });
