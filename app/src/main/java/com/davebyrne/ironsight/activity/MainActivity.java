@@ -1,6 +1,12 @@
 package com.davebyrne.ironsight.activity;
 
+import android.app.AlarmManager;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -22,8 +28,6 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity implements FragmentDrawer.FragmentDrawerListener {
 
-    private static String TAG = MainActivity.class.getSimpleName();
-
     private Toolbar mToolbar;
     private FragmentDrawer drawerFragment;
     private FirebaseAuth auth; //this and next line enable firebase user account functionality
@@ -34,6 +38,22 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //******************testing notifications*******************************
+
+//        AlarmManager alarms = (AlarmManager)this.getSystemService(Context.ALARM_SERVICE);
+//
+//        Receiver receiver = new Receiver();
+//        IntentFilter filter = new IntentFilter("ALARM_ACTION");
+//        registerReceiver(receiver, filter);
+//
+//        Intent intent = new Intent("ALARM_ACTION");
+//        intent.putExtra("param", "My scheduled action");
+//        PendingIntent operation = PendingIntent.getBroadcast(this, 0, intent, 0);
+//        // I choose 3s after the launch of my application
+//        alarms.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+3000, operation) ;
+
+        //************************end of test***********************************
 
         databaseUsers = FirebaseDatabase.getInstance().getReference("users");
 
@@ -53,9 +73,6 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         //get firebase auth instance
         auth = FirebaseAuth.getInstance();
 
-        //get current user
-        final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-
         authListener = new FirebaseAuth.AuthStateListener() { //returns user to login page if user state is null (logged out)
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -70,7 +87,6 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         };
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

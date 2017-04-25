@@ -1,10 +1,12 @@
 package com.davebyrne.ironsight.activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +33,8 @@ public class GameActivity extends AppCompatActivity {
         final String date = getIntent().getStringExtra("gameDate");
         final String plat = getIntent().getStringExtra("gamePlat");
         final String identification = getIntent().getStringExtra("gameId");
+        ImageView iv= (ImageView)findViewById(R.id.imageView3);
+        iv.setImageResource(R.mipmap.ic_game_back);
 
         final Game game = new Game(identification, title, genre, date, plat);
 
@@ -63,8 +67,8 @@ public class GameActivity extends AppCompatActivity {
         infoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ign.com"));
-//                startActivity(iBrowser);
+                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com/#q="+title));
+                startActivity(iBrowser);
 
             }
         });
@@ -72,8 +76,8 @@ public class GameActivity extends AppCompatActivity {
         orderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.steampowered.com"));
-//                startActivity(iBrowser);
+                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://store.steampowered.com/search/?term="+title));
+                startActivity(iBrowser);
             }
         });
     }
