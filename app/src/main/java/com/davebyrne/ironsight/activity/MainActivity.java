@@ -71,12 +71,6 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
 
     }
 
-    private void writeNewUser(String userId, String email) {
-        User user = new User(email);
-
-        databaseUsers.child(userId).setValue(user);
-    }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
