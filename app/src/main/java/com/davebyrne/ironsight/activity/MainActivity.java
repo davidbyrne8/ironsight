@@ -66,9 +66,6 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
                     startActivity(new Intent(MainActivity.this, LoginActivity.class));
                     finish();
                 }
-                else{
-                    //writeNewUser(user.getUid(), user.getEmail()); //this is removing the added games every time the user accesses mainactivity, with just email and ID
-                }
             }
         };
 

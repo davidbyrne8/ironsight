@@ -70,7 +70,7 @@ public class UserListFragment extends Fragment {
                 String identification = gameInstance.getGameId();
 
 
-                Intent i = new Intent(getActivity().getApplicationContext(), GameActivity.class);
+                Intent i = new Intent(getActivity().getApplicationContext(), GameUserActivity.class);
                 i.putExtra("gameName", title);
                 i.putExtra("gameGenre", genre);
                 i.putExtra("gameDate", date);

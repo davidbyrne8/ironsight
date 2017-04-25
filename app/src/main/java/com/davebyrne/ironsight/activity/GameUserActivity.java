@@ -1,12 +1,14 @@
 package com.davebyrne.ironsight.activity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
 
 import com.davebyrne.ironsight.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -15,15 +17,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 
-public class GameActivity extends AppCompatActivity {
+public class GameUserActivity extends AppCompatActivity {
 
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-    DatabaseReference databaseUserList;
+    DatabaseReference databaseUserList = FirebaseDatabase.getInstance().getReference("users/" + user.getUid() + "/list");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
+        setContentView(R.layout.activity_game_user);
 
         Intent i = getIntent();
         final String title = getIntent().getStringExtra("gameName");
@@ -39,22 +41,20 @@ public class GameActivity extends AppCompatActivity {
         final TextView tv3 = (TextView) findViewById(R.id.textView3);
         final TextView tv5 = (TextView) findViewById(R.id.textView5);
 
-        databaseUserList = FirebaseDatabase.getInstance().getReference("users/" + user.getUid() + "/list");
-
         tv1.setText(title);
         tv2.setText(genre);
         tv3.setText(date);
         tv5.setText(plat);
 
-        Button addBtn = (Button) findViewById(R.id.button2);
+        Button rmvBtn = (Button) findViewById(R.id.button2);
         Button infoBtn = (Button) findViewById(R.id.button3);
         Button orderBtn = (Button) findViewById(R.id.button);
 
-        addBtn.setOnClickListener(new View.OnClickListener() {
+        rmvBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                writeNewGame(game);
-                Toast.makeText(getApplicationContext(), title + " added to your list.", Toast.LENGTH_SHORT).show(); //breaking it somehow
+                removeGame(game);
+                Toast.makeText(getApplicationContext(), title + " remove from your list.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
@@ -72,13 +72,18 @@ public class GameActivity extends AppCompatActivity {
         orderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.steampowered.com"));
-//                startActivity(iBrowser);
+                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.steampowered.com"));
+                startActivity(iBrowser);
             }
         });
     }
 
-    private void writeNewGame(Game game) {
-        databaseUserList.child(game.getGameId()).setValue(game);
+    private void removeGame(Game game) {
+        String key = game.getGameId();
+        databaseUserList.child(key).removeValue();
+
+
+//        Game newGame = game;
+//        databaseUserList.child(game.getGameId()).setValue(newGame);
     }
 }
