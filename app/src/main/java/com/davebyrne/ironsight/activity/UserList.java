@@ -23,7 +23,7 @@ public class UserList extends ArrayAdapter<User> {
     private List<User> userList;
 
     public UserList(Activity context, List<User> userList){
-        super(context, R.layout.list_layout, userList);
+        super(context, R.layout.list_meet_layout, userList);
         this.context = context;
         this.userList = userList;
     }
@@ -33,13 +33,13 @@ public class UserList extends ArrayAdapter<User> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
 
-        View listViewItem = inflater.inflate(R.layout.list_layout, null, true);
+        View listViewItem = inflater.inflate(R.layout.list_meet_layout, null, true);
 
         TextView textViewName = (TextView) listViewItem.findViewById(R.id.textViewName);
 
         User user = userList.get(position);
 
-        textViewName.setText(user.getEmail());
+        textViewName.setText(user.getName());
 
         return listViewItem;
     }

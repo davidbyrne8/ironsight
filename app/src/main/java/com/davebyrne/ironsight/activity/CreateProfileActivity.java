@@ -3,6 +3,10 @@ package com.davebyrne.ironsight.activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import com.davebyrne.ironsight.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,14 +27,25 @@ public class CreateProfileActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_profile);
 
+        final Button submit = (Button) findViewById(R.id.button7);
+        final EditText userNameET = (EditText) findViewById(R.id.editText);
+
+
         databaseUsers = FirebaseDatabase.getInstance().getReference("users");
-        writeNewUser(user.getUid(), user.getEmail());
-        startActivity(new Intent(CreateProfileActivity.this, MainActivity.class));
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String userName = userNameET.getText().toString();
+                writeNewUser(user.getUid(), userName, user.getEmail());
+                startActivity(new Intent(CreateProfileActivity.this, MainActivity.class));
+            }
+        });
 
     }
 
-    private void writeNewUser(String userId, String email) {
-        User user = new User(email, null);
+    private void writeNewUser(String userId, String userName, String email) {
+        User user = new User(email, userName, null);
 
         databaseUsers.child(userId).setValue(user);
     }

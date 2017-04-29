@@ -82,6 +82,7 @@ public class GameUserActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MeetUsersActivity.class);
+                intent.putExtra("gameName", title);
                 startActivity(intent);
             }
         });

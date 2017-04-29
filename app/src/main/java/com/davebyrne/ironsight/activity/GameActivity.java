@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import java.io.Serializable;
 
 import com.davebyrne.ironsight.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -60,6 +61,7 @@ public class GameActivity extends AppCompatActivity {
                 writeNewGame(game);
                 Toast.makeText(getApplicationContext(), title + " added to your list.", Toast.LENGTH_SHORT).show(); //breaking it somehow
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("gameName", title);
                 startActivity(intent);
             }
         });
