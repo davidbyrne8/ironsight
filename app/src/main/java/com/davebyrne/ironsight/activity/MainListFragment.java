@@ -4,7 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.text.Editable;
 import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,12 +27,16 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.davebyrne.ironsight.R.id.inputSearch;
+
 
 public class MainListFragment extends Fragment {
 
     List<Game> gameList;
     ListView listViewGames;
     private DatabaseReference databaseGames;
+
+    EditText search;
 
     public MainListFragment() {
         // Required empty public constructor
@@ -57,6 +63,10 @@ public class MainListFragment extends Fragment {
         listViewGames = (ListView) rootView.findViewById(R.id.listViewGames);
 
         gameList = new ArrayList<>();
+
+        search = (EditText) rootView.findViewById(inputSearch);
+
+
 
         //clicking a list item, sends that instance of the game to the game activity for full game details
         listViewGames.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -107,6 +117,8 @@ public class MainListFragment extends Fragment {
                 //getActivity() in a Fragment returns the Activity the Fragment is currently associated with
                 GameList adapter = new GameList(getActivity(), gameList);
                 listViewGames.setAdapter(adapter);
+
+
             }
 
             @Override
@@ -114,6 +126,7 @@ public class MainListFragment extends Fragment {
 
             }
         });
+
     }
 
 

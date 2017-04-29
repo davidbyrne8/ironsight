@@ -20,11 +20,6 @@ import java.util.List;
 
 public class SuggestedListFragment extends Fragment{
 
-
-    private List<Game> gameList = new ArrayList<>();
-    private RecyclerView recyclerView;
-    private GamesAdapter mAdapter;
-
     public SuggestedListFragment() {
         // Required empty public constructor
     }
@@ -41,35 +36,9 @@ public class SuggestedListFragment extends Fragment{
         View rootView = inflater.inflate(R.layout.fragment_sugglist, container, false);
 
 
-        // Inflate the layout for this fragment
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.recyclerView);
 
-        mAdapter = new GamesAdapter(gameList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), LinearLayoutManager.VERTICAL));
-        recyclerView.setAdapter(mAdapter);
 
-        recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity().getApplicationContext(), recyclerView, new ClickListener() {
-            @Override
-            public void onClick(View view, int position) {
-                Game game = gameList.get(position);
-                String name = game.getGameName();
-                String genre = game.getGameGenre();
 
-                Intent i = new Intent(getActivity().getApplicationContext(), GameActivity.class);
-                i.putExtra("gameTitle", name);
-                i.putExtra("gameGenre", genre);
-                startActivity(i);
-                //Toast.makeText(getActivity().getApplicationContext(), game.getTitle() + " is selected!", Toast.LENGTH_SHORT).show(); //tests if working
-            }
-
-            @Override
-            public void onLongClick(View view, int position) {
-
-            }
-        }));
 
 
         return rootView;

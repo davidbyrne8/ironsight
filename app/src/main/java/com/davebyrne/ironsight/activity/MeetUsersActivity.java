@@ -50,17 +50,15 @@ public class MeetUsersActivity extends AppCompatActivity{
                 String userEmailAddress = userInstance.getEmail();
                 String userName = userInstance.getName();
 
-                Intent i = new Intent(Intent.ACTION_SEND);
-                i.setType("message/rfc822");
-                i.setData(Uri.parse("mailto:"));
-                i.putExtra(Intent.EXTRA_EMAIL  , new String[]{userEmailAddress});
-                i.putExtra(Intent.EXTRA_SUBJECT, userName+" has invited you to play!");
-                i.putExtra(Intent.EXTRA_TEXT   , userName+" wants to play "+ gameName+" with you!" );
-                try {
-                    startActivity(i);
-                } catch (android.content.ActivityNotFoundException ex) {
-                    Toast.makeText(MeetUsersActivity.this, "There are no email clients installed.", Toast.LENGTH_SHORT).show();
-                }
+                Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+                emailIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                emailIntent.setType("plain/text");
+                emailIntent.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
+                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{userEmailAddress});
+                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, userName+" has invited you to play!");
+                emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, userName+" wants to play "+ gameName+" with you!");
+                startActivity(emailIntent);
+
             }
         });
 
