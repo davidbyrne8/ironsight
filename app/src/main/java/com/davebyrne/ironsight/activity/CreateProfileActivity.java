@@ -30,7 +30,7 @@ public class CreateProfileActivity extends AppCompatActivity {
     }
 
     private void writeNewUser(String userId, String email) {
-        User user = new User(email);
+        User user = new User(email, null);
 
         databaseUsers.child(userId).setValue(user);
     }

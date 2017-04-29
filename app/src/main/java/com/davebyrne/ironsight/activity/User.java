@@ -6,12 +6,14 @@ package com.davebyrne.ironsight.activity;
 
 public class User {
     String email;
+    Game[] games;
 
     public User() {
     }
 
-    public User(String email) {
+    public User(String email, Game[] games) {
         this.email = email;
+        this.games = games;
     }
 
     public String getEmail() {
@@ -20,5 +22,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Game[] getGames() {
+        return games;
+    }
+
+    public void setGames(Game[] games) {
+        this.games = games;
     }
 }

@@ -43,7 +43,8 @@
         <activity android:name=".activity.SignupActivity" />
         <activity android:name=".activity.SettingsActivity" />
         <activity android:name=".activity.CreateProfileActivity" />
-        <activity android:name=".activity.GameUserActivity"></activity>
+        <activity android:name=".activity.GameUserActivity" />
+        <activity android:name=".activity.MeetUsersActivity"></activity>
     </application>
 
 </manifest>

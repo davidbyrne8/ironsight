@@ -59,6 +59,7 @@
         <activity android:name="com.davebyrne.ironsight.activity.SettingsActivity" />
         <activity android:name="com.davebyrne.ironsight.activity.CreateProfileActivity" />
         <activity android:name="com.davebyrne.ironsight.activity.GameUserActivity" />
+        <activity android:name="com.davebyrne.ironsight.activity.MeetUsersActivity" />
         <activity
             android:name="com.firebase.ui.auth.ui.email.ConfirmRecoverPasswordActivity"
             android:theme="@style/FirebaseUI.Dialog" >

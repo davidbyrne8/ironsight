@@ -49,6 +49,7 @@ public class GameUserActivity extends AppCompatActivity {
         Button rmvBtn = (Button) findViewById(R.id.button2);
         Button infoBtn = (Button) findViewById(R.id.button3);
         Button orderBtn = (Button) findViewById(R.id.button);
+        Button meetBtn = (Button) findViewById(R.id.button6);
 
         rmvBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -76,14 +77,18 @@ public class GameUserActivity extends AppCompatActivity {
                 startActivity(iBrowser);
             }
         });
+
+        meetBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MeetUsersActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void removeGame(Game game) {
         String key = game.getGameId();
         databaseUserList.child(key).removeValue();
-
-
-//        Game newGame = game;
-//        databaseUserList.child(game.getGameId()).setValue(newGame);
     }
 }
