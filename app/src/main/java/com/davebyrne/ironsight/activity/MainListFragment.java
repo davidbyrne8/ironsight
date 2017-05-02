@@ -27,8 +27,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.davebyrne.ironsight.R.id.inputSearch;
-
 
 public class MainListFragment extends Fragment {
 
@@ -36,7 +34,7 @@ public class MainListFragment extends Fragment {
     ListView listViewGames;
     private DatabaseReference databaseGames;
 
-    EditText search;
+    //EditText search;
 
     public MainListFragment() {
         // Required empty public constructor
@@ -64,7 +62,7 @@ public class MainListFragment extends Fragment {
 
         gameList = new ArrayList<>();
 
-        search = (EditText) rootView.findViewById(inputSearch);
+        //search = (EditText) rootView.findViewById(inputSearch);
 
 
 

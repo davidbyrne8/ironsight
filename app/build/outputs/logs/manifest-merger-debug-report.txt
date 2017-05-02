@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:2:1-50:12
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:2:1-51:12
 	package
 		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml
@@ -52,7 +52,7 @@ ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:20:22-69
 application
-ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:22:5-48:19
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:22:5-49:19
 MERGED from [com.firebaseui:firebase-ui-auth:0.4.3] C:\Users\Dave\.android\build-cache\590599a6878808204c3d5f5f2458ed44ba80bf74\output\AndroidManifest.xml:11:5-69:19
 MERGED from [com.facebook.android:facebook-android-sdk:4.11.0] C:\Users\Dave\.android\build-cache\1738fb176e89c47d785aaeb8ddd1817005f54c37\output\AndroidManifest.xml:28:5-20
 MERGED from [com.android.support:cardview-v7:23.2.1] C:\Users\Dave\.android\build-cache\b17cf2f33ebb7bfe88bcd6e8ef3cb05dcdaa6cee\output\AndroidManifest.xml:22:5-20
@@ -137,9 +137,13 @@ ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:46:19-60
 activity#com.davebyrne.ironsight.activity.MeetUsersActivity
-ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:47:9-73
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:47:9-64
 	android:name
 		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:47:19-61
+activity#com.davebyrne.ironsight.activity.SearchActivity
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:48:9-70
+	android:name
+		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:48:19-58
 uses-sdk
 INJECTED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.firebaseui:firebase-ui:0.4.3] C:\Users\Dave\.android\build-cache\a738481c83c9fd7434e3ddc9326b4d4e95117ff0\output\AndroidManifest.xml:7:5-9:41

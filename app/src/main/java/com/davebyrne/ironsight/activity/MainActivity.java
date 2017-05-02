@@ -110,7 +110,8 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         }
 
         if(id == R.id.action_search){ //functionality for the search button on top
-            Toast.makeText(getApplicationContext(), "Search action is selected!", Toast.LENGTH_SHORT).show();
+            Intent i = new Intent(getApplicationContext(), SearchActivity.class); //intent to open SettingsActivity activity page
+            startActivity(i); //start intent
             return true;
         }
 

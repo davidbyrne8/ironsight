@@ -374,5 +374,9 @@
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_navigation_drawer.xml",
         "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\layout\\fragment_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_search.xml",
+        "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\layout\\activity_search.xml"
     }
 ]
