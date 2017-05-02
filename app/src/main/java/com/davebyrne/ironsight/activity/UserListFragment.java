@@ -26,7 +26,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.davebyrne.ironsight.R.id.recyclerView;
 
 
 public class UserListFragment extends Fragment {

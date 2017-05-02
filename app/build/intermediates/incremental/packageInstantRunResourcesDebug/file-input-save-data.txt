@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue May 02 20:12:02 BST 2017
+#Tue May 02 22:14:14 BST 2017
 210.set=ANDROID_RESOURCE
 282.file=C\:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\resources-debug.ap_\\res\\layout\\activity_settings.xml
 14.set=ANDROID_RESOURCE
