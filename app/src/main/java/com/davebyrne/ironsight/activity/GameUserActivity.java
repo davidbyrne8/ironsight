@@ -64,8 +64,8 @@ public class GameUserActivity extends AppCompatActivity {
         infoBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ign.com"));
-//                startActivity(iBrowser);
+                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com/#q="+title));
+                startActivity(iBrowser);
 
             }
         });
@@ -73,7 +73,7 @@ public class GameUserActivity extends AppCompatActivity {
         orderBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.steampowered.com"));
+                Intent iBrowser = new Intent(Intent.ACTION_VIEW, Uri.parse("http://store.steampowered.com/search/?term="+title));
                 startActivity(iBrowser);
             }
         });
