@@ -11,7 +11,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.davebyrne.ironsight.R;
 import com.davebyrne.ironsight.adapter.GamesAdapter;
@@ -79,6 +81,15 @@ public class UserListFragment extends Fragment {
             }
         });
 
+        ArrayList<String> dates = new ArrayList<>();
+        View v;
+        TextView tv;
+        for (int i = 0; i < listViewGames.getCount(); i++) {
+            v = listViewGames.getChildAt(i);
+            tv = (TextView) v.findViewById(R.id.textViewDate);
+            dates.add(tv.getText().toString());
+
+        }
 
 
 

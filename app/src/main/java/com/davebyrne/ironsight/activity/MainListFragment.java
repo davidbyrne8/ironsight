@@ -14,8 +14,6 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Spinner;
-import android.widget.Toast;
 
 import com.davebyrne.ironsight.R;
 import com.google.firebase.database.DataSnapshot;
@@ -62,7 +60,6 @@ public class MainListFragment extends Fragment {
 
         gameList = new ArrayList<>();
 
-        //search = (EditText) rootView.findViewById(inputSearch);
 
 
 

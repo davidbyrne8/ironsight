@@ -10,7 +10,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.davebyrne.ironsight.R;
 import com.davebyrne.ironsight.adapter.GamesAdapter;
@@ -24,9 +26,12 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
+import static android.R.attr.max;
 import static android.R.attr.x;
 import static com.davebyrne.ironsight.R.id.listViewGames;
+import static com.facebook.FacebookSdk.getApplicationContext;
 
 
 public class SuggestedListFragment extends Fragment{
@@ -35,7 +40,7 @@ public class SuggestedListFragment extends Fragment{
     List<Game> gameList1;
     ListView listViewGames;
     private DatabaseReference databaseUserGames;
-    private DatabaseReference databaseGames;
+    private DatabaseReference databaseAllGames;
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
 
     public SuggestedListFragment() {
@@ -54,11 +59,32 @@ public class SuggestedListFragment extends Fragment{
         View rootView = inflater.inflate(R.layout.fragment_sugglist, container, false);
 
         databaseUserGames = FirebaseDatabase.getInstance().getReference("users/" + user.getUid() + "/list"); //reference to game list for current user
-        databaseGames = FirebaseDatabase.getInstance().getReference("games");
+        databaseAllGames = FirebaseDatabase.getInstance().getReference("games");
 
         listViewGames = (ListView) rootView.findViewById(R.id.listViewGames);
 
         gameList = new ArrayList<>();
+
+        listViewGames.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Game gameInstance = gameList.get(position);
+                String title = gameInstance.getGameName();
+                String genre = gameInstance.getGameGenre();
+                String date = gameInstance.getGameDate();
+                String plat = gameInstance.getGamePlat();
+                String identification = gameInstance.getGameId();
+
+
+                Intent i = new Intent(getActivity().getApplicationContext(), GameActivity.class);
+                i.putExtra("gameName", title);
+                i.putExtra("gameGenre", genre);
+                i.putExtra("gameDate", date);
+                i.putExtra("gamePlat", plat);
+                i.putExtra("gameId", identification);
+                startActivity(i);
+            }
+        });
 
 
         return rootView;
@@ -66,7 +92,7 @@ public class SuggestedListFragment extends Fragment{
     public void onStart() {
         super.onStart();
 
-        databaseGames.addValueEventListener(new ValueEventListener() {
+        databaseAllGames.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) { //any time database is changed
 
@@ -77,9 +103,9 @@ public class SuggestedListFragment extends Fragment{
                     Game game = gameSnapshot.getValue(Game.class);
 
                     //add in here the check for the winning genre
-                    String favGenre = favouriteGenre();
+                    String ranGenre = randomGenre();
                     String thisGameGenre = game.getGameGenre();
-                    if(thisGameGenre.equalsIgnoreCase(favGenre)) {
+                    if(thisGameGenre.equalsIgnoreCase(ranGenre)) {
                         gameList.add(game);
                     }
 
@@ -100,77 +126,82 @@ public class SuggestedListFragment extends Fragment{
 
     }
 
-    public String favouriteGenre() {
+    public String randomGenre() {
 
-        String favouriteGenreString = "Strategy";
+        String favouriteGenreString = "";
 
         gameList1 = new ArrayList<>();
 
-        databaseUserGames.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) { //any time database is changed
+//        databaseUserGames.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) { //any time database is changed
+//
+//                gameList1.clear(); //need to clear if it contains any game previously as the dataSnapshot will contain every game each time it is executed
+//
+//                for (DataSnapshot gameSnapshot : dataSnapshot.getChildren()) { //iterate through all values of the database (games)
+//
+//                    Game game = gameSnapshot.getValue(Game.class);
+//
+//                    gameList1.add(game);
+//
+//                }
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError databaseError) { //handles errors
+//
+//            }
+//        });
 
-                gameList1.clear(); //need to clear if it contains any game previously as the dataSnapshot will contain every game each time it is executed
+        int strategy = ThreadLocalRandom.current().nextInt(0, 100 + 1);
+        int rpg = ThreadLocalRandom.current().nextInt(0, 100 + 1);
+        int fps = ThreadLocalRandom.current().nextInt(0, 100 + 1);
+        int sport = ThreadLocalRandom.current().nextInt(0, 100 + 1);
+        int action = ThreadLocalRandom.current().nextInt(0, 100 + 1);
+        int horror = ThreadLocalRandom.current().nextInt(0, 100 + 1);
+        int adventure = ThreadLocalRandom.current().nextInt(0, 100 + 1);
+        int platformer = ThreadLocalRandom.current().nextInt(0, 100 + 1);
+        int fighting = ThreadLocalRandom.current().nextInt(0, 100 + 1);
 
-                for (DataSnapshot gameSnapshot : dataSnapshot.getChildren()) { //iterate through all values of the database (games)
+//        for(int i = 0; i < gameList1.size(); i++) {
+//            Game game = gameList1.get(i);
+//            String gameGenre = game.getGameGenre();
+//            Toast.makeText(getApplicationContext(), gameGenre + " checked", Toast.LENGTH_SHORT).show();
+//
+//
+//
+//            switch (gameGenre) {
+//                case "Strategy":
+//                    strategy++;
+//                    break;
+//                case "RPG":
+//                    rpg++;
+//                    break;
+//                case "FPS":
+//                    fps++;
+//                    break;
+//                case "Sport":
+//                    sport++;
+//                    break;
+//                case "Action":
+//                    action++;
+//                    break;
+//                case "Adventure":
+//                    horror++;
+//                    break;
+//                case "Horror":
+//                    adventure++;
+//                    break;
+//                case "Platformer":
+//                    platformer++;
+//                    break;
+//                case "Fighting":
+//                    fighting++;
+//                    break;
+//            }
+//        }
 
-                    Game game = gameSnapshot.getValue(Game.class);
-
-                    gameList1.add(game);
-
-                }
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) { //handles errors
-
-            }
-        });
-
-        int strategy = 0;
-        int rpg = 0;
-        int fps = 0;
-        int sport = 0;
-        int action = 0;
-        int horror = 0;
-        int adventure = 0;
-        int platformer = 0;
-        int fighting = 0;
-
-        for(int i = 0; i < gameList1.size(); i++) {
-            Game game = gameList1.get(i);
-            String gameGenre = game.getGameGenre();
-
-            switch (gameGenre) {
-                case "Strategy":
-                    strategy++;
-                    break;
-                case "RPG":
-                    rpg++;
-                    break;
-                case "FPS":
-                    fps++;
-                    break;
-                case "Sport":
-                    sport++;
-                    break;
-                case "Action":
-                    action++;
-                    break;
-                case "Adventure":
-                    horror++;
-                    break;
-                case "Horror":
-                    adventure++;
-                    break;
-                case "Platformer":
-                    platformer++;
-                    break;
-                case "Fighting":
-                    fighting++;
-                    break;
-            }
-        }
         if(strategy > rpg && strategy > fps && strategy > sport && strategy > action && strategy > horror && strategy > adventure && strategy > platformer && strategy > fighting){
             favouriteGenreString = "Strategy";
         }

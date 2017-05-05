@@ -4,6 +4,7 @@ import android.app.AlarmManager;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -38,22 +39,6 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //******************testing notifications*******************************
-
-//        AlarmManager alarms = (AlarmManager)this.getSystemService(Context.ALARM_SERVICE);
-//
-//        Receiver receiver = new Receiver();
-//        IntentFilter filter = new IntentFilter("ALARM_ACTION");
-//        registerReceiver(receiver, filter);
-//
-//        Intent intent = new Intent("ALARM_ACTION");
-//        intent.putExtra("param", "My scheduled action");
-//        PendingIntent operation = PendingIntent.getBroadcast(this, 0, intent, 0);
-//        // I choose 3s after the launch of my application
-//        alarms.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis()+3000, operation) ;
-
-        //************************end of test***********************************
 
         databaseUsers = FirebaseDatabase.getInstance().getReference("users");
 
@@ -168,6 +153,7 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
         }
     }
 }
+
 
 /*LAST CHANGES:
 *
