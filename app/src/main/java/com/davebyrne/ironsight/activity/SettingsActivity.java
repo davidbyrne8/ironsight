@@ -8,28 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.davebyrne.ironsight.R;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
-import com.mashape.unirest.http.Unirest;
-import com.mashape.unirest.http.exceptions.UnirestException;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.util.EntityUtils;
-import org.w3c.dom.Text;
-
-import java.io.IOException;
 
 public class SettingsActivity extends AppCompatActivity {
 
@@ -38,7 +21,6 @@ public class SettingsActivity extends AppCompatActivity {
     private ProgressBar progressBar;
     private Button btnSignup, btnLogin, btnReset;
     private TextView test;
-    //DB testing
     private DatabaseReference mDatabase;
 
     @Override
@@ -75,12 +57,6 @@ public class SettingsActivity extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
     }
 
     public void signOut() {

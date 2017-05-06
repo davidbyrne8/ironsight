@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.0"
-    timestamp="1494102497473"
+    timestamp="1494105295217"
     token="3141829508147777112"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -23,13 +23,9 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
-
     <build
         build-mode="FULL"
-        timestamp="1494102245667"
+        timestamp="1494105206117"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -70,11 +66,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1494102497473"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
+        timestamp="1494105295217"
+        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>
