@@ -19,19 +19,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_alignParentStart="true" />
-
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/spinner"
+        android:layout_below="@+id/editText2"
         android:text="Search"
         android:background="@drawable/button_bg_rounded_corners"
         android:layout_alignParentEnd="true" />

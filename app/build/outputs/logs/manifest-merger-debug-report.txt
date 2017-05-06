@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:2:1-51:12
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:2:1-65:12
 	package
 		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml
@@ -144,6 +144,26 @@ activity#com.davebyrne.ironsight.activity.SearchActivity
 ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:48:9-70
 	android:name
 		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:48:19-58
+service#com.davebyrne.ironsight.MyFirebaseMessagingService
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:51:5-56:15
+	android:name
+		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:52:9-51
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:53:9-55:25
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:54:13-73
+	android:name
+		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:54:21-71
+service#com.davebyrne.ironsight.MyFirebaseInstanceIDService
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:58:5-63:15
+	android:name
+		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:59:9-52
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:60:9-62:25
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:61:13-75
+	android:name
+		ADDED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml:61:21-73
 uses-sdk
 INJECTED from C:\Users\Dave\Documents\IronSightProject\ironsight\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.firebaseui:firebase-ui:0.4.3] C:\Users\Dave\.android\build-cache\a738481c83c9fd7434e3ddc9326b4d4e95117ff0\output\AndroidManifest.xml:7:5-9:41
@@ -307,14 +327,6 @@ ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.androi
 		ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:23:88-111
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:23:18-87
-intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:24:13-26:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:24:28-51
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:25:17-77
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:10.2.1] C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\AndroidManifest.xml:25:25-75
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-analytics:10.2.1] C:\Users\Dave\.android\build-cache\22e688c5391b6c3800c9f960477a760aeb88a5f1\output\AndroidManifest.xml:21:5-78
 MERGED from [com.google.firebase:firebase-analytics-impl:10.2.1] C:\Users\Dave\.android\build-cache\8409d52051d18dac95917f9aaa6111f0e5df0013\output\AndroidManifest.xml:21:5-78
@@ -403,14 +415,6 @@ ADDED from [com.google.firebase:firebase-iid:10.2.1] C:\Users\Dave\.android\buil
 		ADDED from [com.google.firebase:firebase-iid:10.2.1] C:\Users\Dave\.android\build-cache\873f1ee6cb9fde782ddace7dacee93def4926396\output\AndroidManifest.xml:43:83-106
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:10.2.1] C:\Users\Dave\.android\build-cache\873f1ee6cb9fde782ddace7dacee93def4926396\output\AndroidManifest.xml:43:18-82
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.2.1] C:\Users\Dave\.android\build-cache\873f1ee6cb9fde782ddace7dacee93def4926396\output\AndroidManifest.xml:44:13-46:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:10.2.1] C:\Users\Dave\.android\build-cache\873f1ee6cb9fde782ddace7dacee93def4926396\output\AndroidManifest.xml:44:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:10.2.1] C:\Users\Dave\.android\build-cache\873f1ee6cb9fde782ddace7dacee93def4926396\output\AndroidManifest.xml:45:17-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:10.2.1] C:\Users\Dave\.android\build-cache\873f1ee6cb9fde782ddace7dacee93def4926396\output\AndroidManifest.xml:45:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:10.2.1] C:\Users\Dave\.android\build-cache\6ca61cf4af2783629ad07be18a911c621e509249\output\AndroidManifest.xml:6:9-194
 	android:authorities

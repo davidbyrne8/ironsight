@@ -55,7 +55,7 @@ public class GameUserActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 removeGame(game);
-                Toast.makeText(getApplicationContext(), title + " remove from your list.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), title + " remove from your games.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
             }
