@@ -1,6 +1,10 @@
 package com.davebyrne.ironsight.activity;
 
-/*this class is the log in page. has logo, login email, password, forget password amd register options*/
+/*this class is the log in page. has logo, login email, password, forget password amd register options
+* Reference: Android Studio Tutorial - Firebase Tutorial, TVAC Studio. Accessed 03/04/17. https://www.youtube.com/watch?v=i-gZAYBMuBs
+*
+*
+* */
 
 import android.content.Intent;
 import android.os.Bundle;

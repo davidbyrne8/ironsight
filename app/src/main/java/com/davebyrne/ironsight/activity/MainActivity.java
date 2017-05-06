@@ -1,13 +1,12 @@
 package com.davebyrne.ironsight.activity;
 
-import android.app.AlarmManager;
-import android.app.Notification;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.BroadcastReceiver;
-import android.content.Context;
+/**
+ * Created by Dave on 16/12/2016.
+ *
+ * Reference: Android Getting Started with Material Design, Ravi Tamada. Accessed 16/12/2016. http://www.androidhive.info/2015/04/android-getting-started-with-material-design/
+ * */
+
 import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -19,7 +18,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.davebyrne.ironsight.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -154,12 +152,3 @@ public class MainActivity extends AppCompatActivity implements FragmentDrawer.Fr
     }
 }
 
-
-/*LAST CHANGES:
-*
-added unirest and json jars
-not working HttpResponse code (cant convert response to readable string etc), usure if works as cannot test
-added a textview to test response
-on IGDB discord now
-using postman to test requests
-*/

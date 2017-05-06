@@ -10,6 +10,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+
     </style>
+
+    <style name="ListView" parent="@android:style/Widget.ListView">
+        <item name="android:background">@color/title</item>
+        <item name="android:dividerHeight">0.2dp</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:divider">@color/navigationBarColor</item>
+    </style>
+
 
 </resources>

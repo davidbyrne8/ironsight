@@ -1,21 +1,22 @@
 package com.davebyrne.ironsight.activity;
 
+/**
+ * Created by Dave on 16/12/2016.
+ *
+ * Reference: Firebase Realtime Database Tutorial for Android, Simplified Coding. Accessed 20/04/17. https://www.youtube.com/watch?v=EM2x33g4syY
+ * */
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.davebyrne.ironsight.R;
-import com.davebyrne.ironsight.adapter.GamesAdapter;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -27,11 +28,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
-
-import static android.R.attr.max;
-import static android.R.attr.x;
-import static com.davebyrne.ironsight.R.id.listViewGames;
-import static com.facebook.FacebookSdk.getApplicationContext;
 
 
 public class SuggestedListFragment extends Fragment{

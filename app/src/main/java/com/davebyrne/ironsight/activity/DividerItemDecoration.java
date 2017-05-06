@@ -1,9 +1,11 @@
 package com.davebyrne.ironsight.activity;
 
 /**
- * Created by Dave on 16/12/2016. T
+ * Created by Dave on 16/12/2016.
  * This creates a divider between the list items
- */
+ *
+ * Reference: Android Getting Started with Material Design, Ravi Tamada. Accessed 16/12/2016. http://www.androidhive.info/2015/04/android-getting-started-with-material-design/
+ * */
 
 import android.content.Context;
 import android.content.res.TypedArray;

@@ -1,5 +1,9 @@
 package com.davebyrne.ironsight.activity;
 
+/*
+* Reference: Android Studio Tutorial - Firebase Tutorial, TVAC Studio. Accessed 03/04/17. https://www.youtube.com/watch?v=i-gZAYBMuBs
+* */
+
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;

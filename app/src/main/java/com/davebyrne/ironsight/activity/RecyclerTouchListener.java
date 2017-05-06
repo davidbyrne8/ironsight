@@ -1,14 +1,16 @@
 package com.davebyrne.ironsight.activity;
 
+/**
+ * Created by Dave on 16/12/2016.
+ *
+ * Reference: Android Getting Started with Material Design, Ravi Tamada. Accessed 16/12/2016. http://www.androidhive.info/2015/04/android-getting-started-with-material-design/
+ * */
+
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-
-/**
- * Created by Dave on 16/12/2016.
- */
 
 interface ClickListener {
     void onClick(View view, int position);

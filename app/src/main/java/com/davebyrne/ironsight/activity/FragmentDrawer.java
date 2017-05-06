@@ -1,5 +1,11 @@
 package com.davebyrne.ironsight.activity;
 
+/**
+ * Created by David Byrne on 16/12/2016.
+ *
+ * Reference: Android Getting Started with Material Design, Ravi Tamada. Accessed 16/12/2016. http://www.androidhive.info/2015/04/android-getting-started-with-material-design/
+ * */
+
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,7 +19,6 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,15 +26,6 @@ import java.util.List;
 import com.davebyrne.ironsight.R;
 import com.davebyrne.ironsight.adapter.NavigationDrawerAdapter;
 import com.davebyrne.ironsight.model.NavDrawerItem;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import static com.davebyrne.ironsight.R.id.listViewMeet;
 
 
 public class FragmentDrawer extends Fragment {
