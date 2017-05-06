@@ -1,4 +1,4 @@
-#Sat May 06 14:49:35 BST 2017
+#Sat May 06 18:00:57 BST 2017
 base.0=C\:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1
 renamed.0=classes.dex
 file.0=C\:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_1\\classes.dex

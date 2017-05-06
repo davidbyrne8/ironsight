@@ -34,8 +34,6 @@ public class GameActivity extends AppCompatActivity {
         final String date = getIntent().getStringExtra("gameDate");
         final String plat = getIntent().getStringExtra("gamePlat");
         final String identification = getIntent().getStringExtra("gameId");
-        ImageView iv= (ImageView)findViewById(R.id.imageView3);
-        iv.setImageResource(R.mipmap.ic_game_back);
 
         final Game game = new Game(identification, title, genre, date, plat);
 
