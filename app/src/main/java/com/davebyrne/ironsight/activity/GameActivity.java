@@ -57,7 +57,7 @@ public class GameActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 writeNewGame(game);
-                Toast.makeText(getApplicationContext(), title + " added to your games.", Toast.LENGTH_SHORT).show(); //breaking it somehow
+                Toast.makeText(getApplicationContext(), title + " added to your games.", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 intent.putExtra("gameName", title);
                 startActivity(intent);

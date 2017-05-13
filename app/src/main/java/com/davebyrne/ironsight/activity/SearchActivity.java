@@ -11,9 +11,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Spinner;
 
 import com.davebyrne.ironsight.R;
 import com.google.firebase.database.DataSnapshot;
@@ -48,6 +50,27 @@ public class SearchActivity extends AppCompatActivity {
 
         Button searchBtn = (Button) findViewById(R.id.button8);
 
+        List<String> spinnerArray =  new ArrayList<String>();
+        spinnerArray.add("");
+        spinnerArray.add("Strategy");
+        spinnerArray.add("RPG");
+        spinnerArray.add("FPS");
+        spinnerArray.add("Platformer");
+        spinnerArray.add("Action");
+        spinnerArray.add("Sport");
+        spinnerArray.add("Horror");
+        spinnerArray.add("Fighting");
+        spinnerArray.add("Adventure");
+
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+                this, android.R.layout.simple_spinner_item, spinnerArray);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        final Spinner sItems = (Spinner) findViewById(R.id.spinner);
+        sItems.setAdapter(adapter);
+
+
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,11 +82,15 @@ public class SearchActivity extends AppCompatActivity {
                         gameList.clear(); //need to clear if it contains any game previously as the dataSnapshot will contain every game each time it is executed
 
                         for(DataSnapshot gameSnapshot: dataSnapshot.getChildren()){ //iterate through all values of the database (games)
-                            String searchString = queryET.getText().toString();
+                            String inputName = queryET.getText().toString();
+                            String selectedSpinner = sItems.getSelectedItem().toString();
 
                             Game game = gameSnapshot.getValue(Game.class);
-                            String thisGame = game.getGameName();
-                            if(thisGame.equalsIgnoreCase(searchString)) {
+                            String thisGameName = game.getGameName();
+                            String thisGameGenre = game.getGameGenre();
+                            if(thisGameName.toLowerCase().contains(inputName.toLowerCase()) && thisGameGenre.equalsIgnoreCase(selectedSpinner) //name and genre match up
+                                    || inputName.equalsIgnoreCase("") && thisGameGenre.equalsIgnoreCase(selectedSpinner)
+                                    || thisGameName.toLowerCase().contains(inputName.toLowerCase()) && selectedSpinner.equalsIgnoreCase("")) { //no name, but genre is set
                                 gameList.add(game);
                             }
 

@@ -1,11 +1,14 @@
 package com.davebyrne.ironsight.activity;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.davebyrne.ironsight.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -47,15 +50,21 @@ public class MeetUsersActivity extends AppCompatActivity{
                 User userInstance = userList.get(position);
                 String userEmailAddress = userInstance.getEmail();
                 String userName = userInstance.getName();
+                String subject = userName+" would like to play "+gameName;
+                String bodyText = userName+" has sent you a request to play "+gameName+" with them";
 
-                Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
-                emailIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                emailIntent.setType("plain/text");
-                emailIntent.setClassName("com.google.android.gm", "com.google.android.gm.ComposeActivityGmail");
-                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{userEmailAddress});
-                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, userName+" has invited you to play!");
-                emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, userName+" wants to play "+ gameName+" with you!");
-                startActivity(emailIntent);
+                String mailto = "mailto:"+userEmailAddress+
+                        "&subject=" + Uri.encode(subject)+
+                        "&body=" + Uri.encode(bodyText);
+
+                Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                emailIntent.setData(Uri.parse(mailto));
+
+                try {
+                    startActivity(emailIntent);
+                } catch (ActivityNotFoundException e) {
+                    Toast.makeText(getApplicationContext(), "This feature requires an email application.", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });

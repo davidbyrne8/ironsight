@@ -45,7 +45,8 @@
         <activity android:name=".activity.CreateProfileActivity" />
         <activity android:name=".activity.GameUserActivity" />
         <activity android:name=".activity.MeetUsersActivity" />
-        <activity android:name=".activity.SearchActivity"></activity>
+        <activity android:name=".activity.SearchActivity"
+            android:windowSoftInputMode="stateHidden"/>
 
         <!--<service-->
             <!--android:name=".MyFirebaseMessagingService">-->
