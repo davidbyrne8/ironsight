@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+    }
     compileSdkVersion 24
     buildToolsVersion "25.0.1"
     defaultConfig {
@@ -20,6 +22,11 @@ android {
             debuggable true
         }
     }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+    }
 }
 
 dependencies {
@@ -29,8 +36,6 @@ dependencies {
     })
     compile files('libs/unirest-java-1.4.9.jar')
     compile files('libs/java-json.jar')
-
-
     compile 'com.android.support:appcompat-v7:24.2.1'
     compile 'com.android.support:recyclerview-v7:24.2.1'
     compile 'com.android.support:support-v4:24.2.1'

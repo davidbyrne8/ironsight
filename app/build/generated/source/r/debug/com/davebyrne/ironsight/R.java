@@ -4201,6 +4201,8 @@ containing a value of this type.
         public static final int CardView=0x7f08008e;
         public static final int CardView_Dark=0x7f0800c7;
         public static final int CardView_Light=0x7f0800c8;
+        /**  colorControlActivated & colorControlHighlight use the colorAccent color by default 
+         */
         public static final int FirebaseEditTextTheme=0x7f0800c9;
         public static final int FirebaseUI=0x7f08007f;
         public static final int FirebaseUI_AuthMethodPicker=0x7f0800ca;

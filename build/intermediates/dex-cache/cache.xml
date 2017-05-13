@@ -2,13 +2,184 @@
 <items version="2" >
 
     <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\38f3cb60ff59d1cab309018705d70cb3690c95b1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_2a3c0bae9c1ad1aba59264728f26abbbdeafa605.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\8409d52051d18dac95917f9aaa6111f0e5df0013\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="888983f51cf34f57a93ff16832552f2f15937212">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_63d6b2afdd39ec7f050d418deca644aa278f357d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\bolts-tasks-1.4.0_818dfc0e7abe3203577005cd71d3d8cbdde9a313.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\ce5b4c61414cb5ad44ae4ec336df15b317c046dc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_2795605611cc6eb81b8d8d1e1384881b95045de3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\38f3cb60ff59d1cab309018705d70cb3690c95b1\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_d49793edab0a06827541047455b05b4e78cfd24b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\3b1486ef8bdd32bae369c56f6ab3d9435379feb3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_87e6fa7654286d560f42b4102addbd92b36dca0e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\22e688c5391b6c3800c9f960477a760aeb88a5f1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_c6a0b554a3dda04ace9ee056d9ef00222e517cf7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\cd6d11b432c6cc006124c7212282990fd8d9fa06\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_68f7b4550dc7a1f6bd65e8839d79048649a5e44d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\3452ea07ca195953220c93b2664109c1de4c555c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_23e2b6f899a5ab2912923835074c45c768c1765c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\6ca61cf4af2783629ad07be18a911c621e509249\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_ebc2f6ec3ff6aa001e2c060376e907ed2dd47c5e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\f9eb4b18bc2aff39be7635331a6b2c5fdebaad17\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_a1a726a9afd1bdccfcb7c389fd5aff0fa7ede509.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\7b1c67bf3bf1879c3aefaf0d463fe1cbc193c2dc\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_c41856357562cf4ce1b377fb05143fd8b3ed138f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\Documents\IronSightProject\ironsight\app\libs\java-json.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="edad9c5de6fb8df07c535a47045956026011ffa3">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\java-json_7a672f200f88a126fa2750e971d08755134b23eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\support-annotations-24.2.1_297199a9d67f9249e6fe9b4181b781c497a24a4a.jar" />
+    </item>
+    <item
         is-multidex="true"
-        jar="C:\Users\Dave\.android\build-cache\3dc20c0c89ad03d16918b0407cbea037b64c605f\output\jars\classes.jar"
+        jar="C:\Users\Dave\Documents\IronSightProject\ironsight\app\libs\java-json.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
-        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f2d17b835305bb4bbbeaba83853b10d11cbb01fa\classes.dex" />
+        sha1="edad9c5de6fb8df07c535a47045956026011ffa3">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\2\java-json_7a672f200f88a126fa2750e971d08755134b23eb\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\2c71b8df28356a574014259ef99d63060f814076\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_5301a00f9a2b4344587427c4d9d60daeea0257d0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\57294896f68d898f9bedf57d3c1a6fd2dc25f7df\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_b572f63545448a5bd0adf04a5c1f238164af06c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\3452ea07ca195953220c93b2664109c1de4c555c\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_e129405a3af4365ae862c3f8653469d43509ecee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.1\f5aa318bda4c6c8d688c9d00b90681dcd82ce636\httpcore-4.4.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f5aa318bda4c6c8d688c9d00b90681dcd82ce636">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\httpcore-4.4.1_eae2e4e1c4717b0bb111b8f910bc911a8828768d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\constraint-layout-solver-1.0.2_cf9337fbb71280dfeac6a96697d12de6920e8f58.jar" />
     </item>
     <item
         is-multidex="true"
@@ -20,13 +191,94 @@
         <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_33c70b3e464adbe3167d0dde0a9a54a1fbe13225\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Dave\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\0e706d99758a3facb7822ecb74353228ee80e135\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
-        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_cf9337fbb71280dfeac6a96697d12de6920e8f58\classes.dex" />
+        sha1="25f55515117e14a658120a7b01a9ea5170409db4">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_2a47c0229aee2839b2932a82e81577b316375ca7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\590599a6878808204c3d5f5f2458ed44ba80bf74\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="647502c39ed7ca9bbf22c22d0015c77e0d06e317">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_0d77a8979c1ec177af26479cbca2b596da6ce1f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\f9eb4b18bc2aff39be7635331a6b2c5fdebaad17\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\internal_impl-24.2.1_bbaf2165d5ded8432a98b2bef1d3756b208ba3fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\e4e06a24b5bb632757184df3f6940731453b9c8e\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2a7ffe939ffd830b5d4052f3c1c4c235923790ce">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_245064001463ddfc91297dfe29b12a7594560238.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\2c71b8df28356a574014259ef99d63060f814076\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_0e6aa9cf9b4dd93fc94d55b70066f10529131d23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\e053d0da71819cb82c5bc57c7356ac34999aeeca\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="12032271e6be735e811ad529cb08ff066c381640">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_c4689fdb3c758e1d859032967bb2ab65701a697a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\15f0cea339376013d787dbf036523e0427694de3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_95bfaa8c66b6a814e3d8c256a3138034de9e7361.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\Documents\IronSightProject\ironsight\app\libs\unirest-java-1.4.9.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="778cffcba803dc7d43932266aef4c91f5b6b4dd0">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\unirest-java-1.4.9_d64349e3f7c22543c060260ac015feec3d88a401.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\535eac9629c8b28124182e8becdf2bdc9456a60a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="734f779fc6347fe6932ae0ae510f958aadf55e45">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_969a2e2630e8d75f2158557406c50517c43eae1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\b17cf2f33ebb7bfe88bcd6e8ef3cb05dcdaa6cee\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="cb86970df0f0f25f766d320b279c7858c1ca0003">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_dc8ace8ceee7926d5e38096fba92c39ec6c921bc.jar" />
     </item>
     <item
         is-multidex="true"
@@ -38,22 +290,148 @@
         <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\2\unirest-java-1.4.9_d64349e3f7c22543c060260ac015feec3d88a401\classes.dex" />
     </item>
     <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\bolts-applinks-1.4.0_47c92e406f8733759f270c49d304377cad4f4513.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\3dc20c0c89ad03d16918b0407cbea037b64c605f\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_f2d17b835305bb4bbbeaba83853b10d11cbb01fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\8cada010243a7797d0c2a1a772357bc42e44bf3c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d0a843615f3b5fa3a080497709f5436696149a09">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_d1fc674701dddcc34dae2fb6c552a0e8127367ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\873f1ee6cb9fde782ddace7dacee93def4926396\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="399f75732ff1ac159f9e73611536f1508bf18d3b">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_5c68098b5b37cf5b12d0de9e1c05ad3ff989a667.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\1738fb176e89c47d785aaeb8ddd1817005f54c37\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="86da97c30f50a67ddabe2cf7040713ad17153fce">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_48377f174c648b8a38d70f8b3936e7a705db480f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\a738481c83c9fd7434e3ddc9326b4d4e95117ff0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2485a4d9357967fb69ff9ac323ca0e778c2c22fb">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_1182c7436a649b756c2bbe4c0df81fd9297120be.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\7fcd774f513179b00732e8c1e0bae1cc7dee3b94\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_3c757ab2aedbcd3ada94c0d9d28446aef86d50ac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\7b1c67bf3bf1879c3aefaf0d463fe1cbc193c2dc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_d8c6e44f7c342da439e621f1c17fb5a69370c26b.jar" />
+    </item>
+    <item
         is-multidex="true"
         jar="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="aaf493a315464902a59983afbb066e3b2ef5d8ea">
+        sha1="bc26463133b04fd0f9043b63ce855a9f83637de0">
         <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7543d4cfae22fdb7cefb04ca8a7e175a2305d172\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Dave\Documents\IronSightProject\ironsight\app\libs\java-json.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\a0c5efe35f074b42ec62665ac2cbc91ff575d86d\output\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="edad9c5de6fb8df07c535a47045956026011ffa3">
-        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\transforms\dex\debug\folders\1000\2\java-json_7a672f200f88a126fa2750e971d08755134b23eb\classes.dex" />
+        sha1="b2349ddfe04831042844cbf055e5a072da37ddf8">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_981c4a14adfd71ee460b7a21e9e7aacb721afb01.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\7ca7a3b1bb817d5770ee89bb8ab782b8a256a2dc\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4b42a61cd5924f28e95894e859e6abe57847e2f3">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_0b35e701dce680b9a9a59a70942bd202005622ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\37cbeaa4323f158ccf15abb03389a1173dd36c09\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_5605518843a4be318464ba7ca5984e3c9471f84b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\857fd6006e9e3b6bf8b57e3c26ecfb58fc39d1be\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0e5a66a941515d873a34065fe44fbba6ef422a1b">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_7ed4a9a7ccc5ef0f2feb50e7086f5e4e0bf1b70f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\5c7c2b7fec0d206571c504a9528e3602fa82c58d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_15ff6be93e222ee43dacbe28c895729e63ef9268.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\c9c92060f7c66a69fd326ebd027b99c6994a54cf\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_bbdc9513b80e678f7482327f83db4ad120bc6f28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Dave\.android\build-cache\d093ace1aba821ebfcda8475072c8aec90cbe373\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\Dave\Documents\IronSightProject\ironsight\app\build\intermediates\pre-dexed\release\classes_6fd1518016d7fc440d99e2f03ce2e9abb2b8c211.jar" />
     </item>
 
 </items>

@@ -188,12 +188,12 @@
         "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\layout\\messenger_button_send_blue_large.xml"
     },
     {
-        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
-        "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\layout\\messenger_button_send_blue_small.xml"
-    },
-    {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_meet_layout.xml",
         "source": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\src\\main\\res\\layout\\list_meet_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\messenger_button_send_blue_small.xml",
+        "source": "C:\\Users\\Dave\\.android\\build-cache\\1738fb176e89c47d785aaeb8ddd1817005f54c37\\output\\res\\layout\\messenger_button_send_blue_small.xml"
     },
     {
         "merged": "C:\\Users\\Dave\\Documents\\IronSightProject\\ironsight\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",

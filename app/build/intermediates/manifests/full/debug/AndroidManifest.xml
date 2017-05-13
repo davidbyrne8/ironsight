@@ -24,18 +24,6 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
-    <service android:name="com.davebyrne.ironsight.MyFirebaseMessagingService" >
-        <intent-filter>
-            <action android:name="com.google.firebase.MESSAGING_EVENT" />
-        </intent-filter>
-    </service>
-    <service android:name="com.davebyrne.ironsight.MyFirebaseInstanceIDService" >
-        <intent-filter>
-            <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-        </intent-filter>
-    </service>
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
@@ -63,7 +51,7 @@
         </activity>
         <activity
             android:name="com.davebyrne.ironsight.activity.MainActivity"
-            android:windowSoftInputMode="stateHidden" /> <!-- hides text input keyboard oncreate -->
+            android:windowSoftInputMode="stateHidden" />
         android:label="@string/title_activity_login" />
         <activity android:name="com.davebyrne.ironsight.activity.GameActivity" />
         <activity android:name="com.davebyrne.ironsight.activity.ResetPasswordActivity" />
@@ -73,6 +61,22 @@
         <activity android:name="com.davebyrne.ironsight.activity.GameUserActivity" />
         <activity android:name="com.davebyrne.ironsight.activity.MeetUsersActivity" />
         <activity android:name="com.davebyrne.ironsight.activity.SearchActivity" />
+
+        <!-- <service -->
+        <!-- android:name=".MyFirebaseMessagingService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.MESSAGING_EVENT"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+
+        <!-- <service -->
+        <!-- android:name=".MyFirebaseInstanceIDService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
         <activity
             android:name="com.firebase.ui.auth.ui.email.ConfirmRecoverPasswordActivity"
             android:theme="@style/FirebaseUI.Dialog" >
