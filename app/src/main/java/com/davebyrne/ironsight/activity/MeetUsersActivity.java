@@ -25,7 +25,18 @@ import java.util.List;
 public class MeetUsersActivity extends AppCompatActivity{
 
     private DatabaseReference databaseMeetUsers;
+
+
+
+
+
     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
+
+
+
+
+
     List<User> userList;
     ListView listViewMeet;
 
@@ -53,9 +64,7 @@ public class MeetUsersActivity extends AppCompatActivity{
                 String subject = userName+" would like to play "+gameName;
                 String bodyText = userName+" has sent you a request to play "+gameName+" with them";
 
-                String mailto = "mailto:"+userEmailAddress+
-                        "&subject=" + Uri.encode(subject)+
-                        "&body=" + Uri.encode(bodyText);
+                String mailto = "mailto:"+userEmailAddress;
 
                 Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
                 emailIntent.setData(Uri.parse(mailto));
